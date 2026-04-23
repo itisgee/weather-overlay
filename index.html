@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-html, body{
-margin:0;
-padding:0;
-background:transparent !important;
-overflow:hidden;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherHolidays Overlay</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent !important;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
 
-body{
-background:none !important;
-}
+    body {
+      background: none !important;
+    }
 
-.box{
-position:fixed;
-left:30px;
-bottom:30px;
-background:rgba(0,0,0,.5);
-color:white;
-font-family:Arial,sans-serif;
-font-weight:bold;
-font-size:28px;
-padding:14px 18px;
-border-radius:12px;
-}
+    .wrap {
+      position: fixed;
+      left: 30px;
+      bottom: 30px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
 
-.small{
-display:block;
-font-size:18px;
-font-weight:normal;
-margin-top:6px;
-}
-</style>
+    .brand {
+      background: rgba(0, 0, 0, 0.68);
+      color: #ffffff;
+      padding: 14px 18px;
+      border-radius: 16px;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.1;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .data {
+      background: rgba(8, 45, 87, 0.82);
+      color: #ffffff;
+      padding: 14px 18px;
+      border-radius: 16px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.1;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .emoji {
+      margin-right: 8px;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <div class="brand">
+      <span class="emoji">🌪️</span>WEATHERHOLIDAYS LIVE
+    </div>
 
-<div class="box">
-🌪 WEATHERHOLIDAYS LIVE
-<span class="small">
-📡 LIVE CHASE FEED
-</span>
-</div>
-
+    <div class="data">
+      ↗ NE | 62 mph
+    </div>
+  </div>
 </body>
 </html>
